@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 new AppUpdater(context)
-                        //.setUpdateFrom(UpdateFrom.GITHUB)
-                        //.setGitHubUserAndRepo("javiersantos", "AppUpdater")
+                        .setUpdateFrom(UpdateFrom.GITHUB)
+                        .setGitHubUserAndRepo("javiersantos", "AppUpdater")
                         .setUpdateFrom(UpdateFrom.JSON)
                         .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.json")
                         .setDisplay(Display.DIALOG)
