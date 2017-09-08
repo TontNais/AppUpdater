@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/javiersantos/AppUpdater")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/TontNais/AppUpdater")));
             }
         });
 
@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 new AppUpdater(context)
-                        .setUpdateFrom(UpdateFrom.GITHUB)
-                        .setGitHubUserAndRepo("javiersantos", "AppUpdater")
+//                        .setUpdateFrom(UpdateFrom.GITHUB)
+//                        .setGitHubUserAndRepo("javiersantos", "AppUpdater")
                         .setUpdateFrom(UpdateFrom.JSON)
-                        .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.json")
+                        .setUpdateJSON("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/update-changelog.json")
                         .setDisplay(Display.DIALOG)
                         .showAppUpdated(true)
                         .start();
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         //.setUpdateFrom(UpdateFrom.GITHUB)
                         //.setGitHubUserAndRepo("javiersantos", "AppUpdater")
                         .setUpdateFrom(UpdateFrom.JSON)
-                        .setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update.json")
+                        .setUpdateXML("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/update.json")
                         .setDisplay(Display.DIALOG)
                         .showAppUpdated(true)
                         .start();
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         //.setUpdateFrom(UpdateFrom.GITHUB)
                         //.setGitHubUserAndRepo("javiersantos", "AppUpdater")
                         .setUpdateFrom(UpdateFrom.XML)
-                        .setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update.xml")
+                        .setUpdateXML("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/update.xml")
                         .setDisplay(Display.SNACKBAR)
                         .showAppUpdated(true)
                         .start();
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         //.setUpdateFrom(UpdateFrom.GITHUB)
                         //.setGitHubUserAndRepo("javiersantos", "AppUpdater")
                         .setUpdateFrom(UpdateFrom.XML)
-                        .setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update.xml")
+                        .setUpdateXML("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/update.xml")
                         .setDisplay(Display.NOTIFICATION)
                         .showAppUpdated(true)
                         .start();

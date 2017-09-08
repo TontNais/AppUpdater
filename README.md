@@ -1,14 +1,14 @@
-<h1 align="center">AppUpdater <a href="https://github.com/javiersantos/AppUpdater#how-to-include"><img src="https://jitpack.io/v/javiersantos/AppUpdater.svg"></a></h1>
+<h1 align="center">AppUpdater <a href="https://github.com/TontNais/AppUpdater#how-to-include"><img src="https://jitpack.io/v/TontNais/AppUpdater.svg"></a></h1>
 <h4 align="center">Android Library</h4>
 
 <p align="center">
   <a target="_blank" href="https://android-arsenal.com/api?level=8"><img src="https://img.shields.io/badge/API-9%2B-orange.svg"></a>
-  <a target="_blank" href="https://travis-ci.org/javiersantos/AppUpdater"><img src="https://travis-ci.org/javiersantos/AppUpdater.svg?branch=master"></a>
+  <a target="_blank" href="https://travis-ci.org/TontNais/AppUpdater"><img src="https://travis-ci.org/TontNais/AppUpdater.svg?branch=master"></a>
   <a target="_blank" href="http://android-arsenal.com/details/1/3094"><img src="https://img.shields.io/badge/Android%20Arsenal-AppUpdater-blue.svg"></a>
-  <a target="_blank" href="https://www.paypal.me/javiersantos" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a>
+  <a target="_blank" href="https://www.paypal.me/TontNais" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a>
 </p>
 
-<p align="center">Android Library that checks for updates on Google Play, GitHub, Amazon, F-Droid or your own server. This library notifies your apps' updates by showing a Material dialog, Snackbar or notification. Check out the <a href="https://github.com/javiersantos/AppUpdater/wiki">wiki</a>.</p>
+<p align="center">Android Library that checks for updates on Google Play, GitHub, Amazon, F-Droid or your own server. This library notifies your apps' updates by showing a Material dialog, Snackbar or notification. Check out the <a href="https://github.com/TontNais/AppUpdater/wiki">wiki</a>.</p>
 
 ## Sample Project
 You can download the latest sample APK from Google Play:
@@ -54,7 +54,7 @@ AppUpdater appUpdater = new AppUpdater(getActivity());
 appUpdater.start();
 ```
 
-## Customizations ([Wiki](https://github.com/javiersantos/AppUpdater/wiki))
+## Customizations ([Wiki](https://github.com/TontNais/AppUpdater/wiki))
 
 ### Displaying a dialog, Snackbar or notification
 The default usage is configured to display a dialog. However, there are other ways to show the update notice.
@@ -86,13 +86,13 @@ new AppUpdater(this)
 	...
 ```
 
-When using GitHub you must provide the repo where the library will check for updates: `.setGitHubUserAndRepo("javiersantos", "AppUpdater")`. Check out the [wiki](https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.GITHUB) for more details.
+When using GitHub you must provide the repo where the library will check for updates: `.setGitHubUserAndRepo("javiersantos", "AppUpdater")`. Check out the [wiki](https://github.com/TontNais/AppUpdater/wiki/UpdateFrom.GITHUB) for more details.
 
-When using the XML source you must upload a .xml file somewhere on the Internet following the structure explained in the [wiki](https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.XML) and add the URL as shown in this example: `.setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.xml")`.
+When using the XML source you must upload a .xml file somewhere on the Internet following the structure explained in the [wiki](https://github.com/TontNais/AppUpdater/wiki/UpdateFrom.XML) and add the URL as shown in this example: `.setUpdateXML("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/update-changelog.xml")`.
 
-When using the JSON source you must upload a .json file somewhere on the Internet following the structure explained in the [wiki](https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.JSON) and add the URL as shown in this example: `.setUpdateJSON("https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.JSON")`.
+When using the JSON source you must upload a .json file somewhere on the Internet following the structure explained in the [wiki](https://github.com/TontNais/AppUpdater/wiki/UpdateFrom.JSON) and add the URL as shown in this example: `.setUpdateJSON("https://github.com/TontNais/AppUpdater/wiki/UpdateFrom.JSON")`.
 
-A detailed description with examples is available at: https://github.com/javiersantos/AppUpdater/wiki
+A detailed description with examples is available at: https://github.com/TontNais/AppUpdater/wiki
 
 ### Setting the frequency to show updates
 By default, a dialog/Snackbar/notification will be shown whenever a new version is found. However, this can be set to show only every X times that the app ascertains that a new update is available.
@@ -156,7 +156,7 @@ AppUpdaterUtils appUpdaterUtils = new AppUpdaterUtils(this)
 appUpdaterUtils.start();
 ```
 
-![AppUpdater](https://raw.githubusercontent.com/javiersantos/AppUpdater/master/Screenshots/banner.png)
+![AppUpdater](https://raw.githubusercontent.com/TontNais/AppUpdater/master/Screenshots/banner.png)
 
 ## License
 	Copyright 2016 Javier Santos

@@ -33,7 +33,7 @@ public class NoUpdateAvailableTest {
             public void run() {
                 new AppUpdaterUtils(InstrumentationRegistry.getTargetContext())
                         .setUpdateFrom(UpdateFrom.JSON)
-                        .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/src/androidTest/java/com/github/javiersantos/appupdater/files/no-update-available-basic.json")
+                        .setUpdateJSON("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/src/androidTest/java/com/github/TontNais/appupdater/files/no-update-available-basic.json")
                         .withListener(new AppUpdaterUtils.UpdateListener() {
                             @Override
                             public void onSuccess(Update update, Boolean isUpdateAvailable) {
@@ -63,7 +63,7 @@ public class NoUpdateAvailableTest {
             public void run() {
                 new AppUpdaterUtils(InstrumentationRegistry.getTargetContext())
                         .setUpdateFrom(UpdateFrom.JSON)
-                        .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/src/androidTest/java/com/github/javiersantos/appupdater/files/no-update-available-versionCode.json")
+                        .setUpdateJSON("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/src/androidTest/java/com/github/TontNais/appupdater/files/no-update-available-versionCode.json")
                         .withListener(new AppUpdaterUtils.UpdateListener() {
                             @Override
                             public void onSuccess(Update update, Boolean isUpdateAvailable) {
@@ -93,7 +93,7 @@ public class NoUpdateAvailableTest {
             public void run() {
                 new AppUpdaterUtils(InstrumentationRegistry.getTargetContext())
                         .setUpdateFrom(UpdateFrom.XML)
-                        .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/src/androidTest/java/com/github/javiersantos/appupdater/files/no-update-available-basic.xml")
+                        .setUpdateJSON("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/src/androidTest/java/com/github/TontNais/appupdater/files/no-update-available-basic.xml")
                         .withListener(new AppUpdaterUtils.UpdateListener() {
                             @Override
                             public void onSuccess(Update update, Boolean isUpdateAvailable) {
@@ -123,7 +123,7 @@ public class NoUpdateAvailableTest {
             public void run() {
                 new AppUpdaterUtils(InstrumentationRegistry.getTargetContext())
                         .setUpdateFrom(UpdateFrom.XML)
-                        .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/src/androidTest/java/com/github/javiersantos/appupdater/files/no-update-available-versionCode.xml")
+                        .setUpdateJSON("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/src/androidTest/java/com/github/TontNais/appupdater/files/no-update-available-versionCode.xml")
                         .withListener(new AppUpdaterUtils.UpdateListener() {
                             @Override
                             public void onSuccess(Update update, Boolean isUpdateAvailable) {

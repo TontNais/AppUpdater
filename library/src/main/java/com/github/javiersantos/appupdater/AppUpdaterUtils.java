@@ -56,7 +56,7 @@ public class AppUpdaterUtils {
      * @param updateFrom source where the latest update is uploaded. If GITHUB is selected, .setGitHubAndRepo method is required.
      * @return this
      * @see com.github.javiersantos.appupdater.enums.UpdateFrom
-     * @see <a href="https://github.com/javiersantos/AppUpdater/wiki">Additional documentation</a>
+     * @see <a href="https://github.com/TontNais/AppUpdater/wiki">Additional documentation</a>
      */
     public AppUpdaterUtils setUpdateFrom(UpdateFrom updateFrom) {
         this.updateFrom = updateFrom;
