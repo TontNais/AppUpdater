@@ -1,12 +1,12 @@
 package com.github.javiersantos.appupdater;
 
-import android.support.test.InstrumentationRegistry;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
-
 import com.github.javiersantos.appupdater.enums.AppUpdaterError;
 import com.github.javiersantos.appupdater.enums.UpdateFrom;
 import com.github.javiersantos.appupdater.objects.Update;
+
+import android.support.test.InstrumentationRegistry;
+import android.support.test.rule.UiThreadTestRule;
+import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -15,8 +15,7 @@ import org.junit.runner.RunWith;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4.class)
 public class UpdateAvailableTest {
@@ -33,7 +32,7 @@ public class UpdateAvailableTest {
             public void run() {
                 new AppUpdaterUtils(InstrumentationRegistry.getTargetContext())
                         .setUpdateFrom(UpdateFrom.JSON)
-                        .setUpdateJSON("https://raw.githubusercontent.com/TontNais/AppUpdater/master/app/src/androidTest/java/com/github/javiersantos/appupdater/files/update-available-basic.json")
+                        .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/src/androidTest/java/com/github/javiersantos/appupdater/files/update-available-basic.json")
                         .withListener(new AppUpdaterUtils.UpdateListener() {
                             @Override
                             public void onSuccess(Update update, Boolean isUpdateAvailable) {
