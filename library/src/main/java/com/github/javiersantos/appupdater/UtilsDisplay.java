@@ -106,5 +106,4 @@ class UtilsDisplay {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(0, builder.build());
     }
-
 }
